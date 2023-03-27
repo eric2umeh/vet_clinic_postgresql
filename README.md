@@ -1,33 +1,32 @@
-# Vet clinic database
+# Vet Clinic Postgresql 
 
 # 📗 Table of Contents
 
-- [Vet clinic database](#vet-clinic-database)
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Vet clinic database ](#-vet-clinic-database-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-    - [Here is the schema diagram for the database](#here-is-the-schema-diagram-for-the-database)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-  - [👥 Authors ](#-authors-)
-    - [👤 Eric Umeohabike:](#-eric-umeohabike)
-- [🔭 Future Features:](#-future-features)
-- [🤝 Contributing:](#-contributing)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Database Diagram](#database-diagram)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Deployment]()
+- [👥 Authors](#author)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Vet clinic database <a name="about-project"></a>
+# 📖 Vet Clinic Postgresql  <a name="about-project"></a>
 
-> A veterinary clinic database is a relational database designed to manage and store information related to the operation of a veterinary clinic. The database can be queried and updated using SQL commands, enabling efficient management and analysis of clinic data.
-
-**Vet clinic database** is a SQL database to store and manage data of a veterinary clinic.
+> A veterinary clinic database is a relational database designed to manage and store information related to the operation of a veterinary clinic. 
+User can use the project query to create, read, update and delete specific data fromm the database using sql terminal, enabling efficient management and analysis of clinic data.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,14 +42,14 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li></li>
+    <li>Local port server</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.postgresql.org/">PostgresQL</a></li>
   </ul>
 </details>
 
@@ -78,30 +77,34 @@ Not available
 
 In order to run this project you need:
 - Installed Git.
-- Installed PostgreSQL RDBMS
+- Installed [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql_environment.htm)
 - Create a local directory that you want to clone the repository.
 - Open the command prompt in the created directory.
-- On the terminal run this command git clone https://github.com/Eric2umeh/vet_clinic_database.git
-
-
-
+- On the terminal run this command git clone https://github.com/Eric2umeh/vet_clinic_postgresql.git
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh 
-git clone https://github.com/Eric2umeh/vet_clinic_database.git
+git clone https://github.com/Eric2umeh/vet_clinic_postgresql.git
   ```
   ```sh 
-  cd vet_clinic_database
+  cd vet_clinic_postgresql
   ```
+
+### Usage
+- Create a new database then open a sql editor or sql ternimal then your can use below SQL language to read and update your database with multiple tables.
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
+
 ### 👤 **Eric Umeohabike**:
 - GitHub: [@Eric2umeh](https://github.com/Eric2umeh)
 - Twitter: [@King_Eric_](https://twitter.com/King_Eric_)
