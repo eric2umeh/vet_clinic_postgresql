@@ -47,13 +47,26 @@ BEGIN WORK;
 DELETE FROM animals
 WHERE date_of_birth > '2022-01-01';
 SELECT * FROM animals;
+
 SAVEPOINT SP1;
+
 UPDATE animals
 SET weight_kg = weight_kg*-1;
 SELECT * FROM animals;
+
 ROLLBACK TO SP1;
+
 UPDATE animals
 SET weight_kg = weight_kg*-1
 WHERE weight_kg < 0;
 SELECT * FROM animals;
+
 COMMIT;
+
+-- Aggregate functions
+SELECT COUNT(*) FROM animals;
+SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
+SELECT AVG(weight_kg) FROM animals;
+SELECT neutered,SUM(escape_attempts) AS escapees FROM animals GROUP BY neutered;
+SELECT species,MIN(weight_kg) AS minimum_weight,MAX(weight_kg) AS maximum_weight FROM animals GROUP BY species;
+SELECT species,AVG(escape_attempts) AS avg_escapees FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'  GROUP BY species;
