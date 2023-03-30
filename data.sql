@@ -57,3 +57,52 @@ UPDATE animals SET owner_id=4 WHERE name IN ('Charmander','Squirtle','Blossom');
 UPDATE animals SET owner_id=5 WHERE name IN ('Angemon','Boarmon');
 SELECT * FROM animals;
 COMMIT WORK;
+
+/* Milestone 4 */
+
+-- insert data for vets, specialities and visits tables
+BEGIN WORK;
+INSERT INTO vets (name,age,date_of_graduation)
+VALUES
+('William Tatcher',45,'Apr 23,2000'),
+('Maisy Smith',26,'Jan 17,2019'),
+('Stephanie Mendez',64,'May 4,1981'),
+('Jack Harkness',38,'Jun 8,2008');
+SELECT * FROM vets;
+COMMIT WORK;
+
+BEGIN WORK;
+INSERT INTO specializations (vet_id,species_id)
+VALUES
+(1,1),
+(3,2),
+(3,1),
+(4,2);
+SELECT * FROM specializations;
+COMMIT WORK;
+
+BEGIN WORK;
+INSERT INTO visits (animal_id,vet_id,visit_date)
+VALUES
+(5,1,'May 24,2020'),
+(1,3,'July 22,2020'),
+(6,4,'Feb 2,2021'),
+(9,2,'Jan 5,2020'),
+(9,2,'Mar 8,2020'),
+(9,2,'May 14,2020'),
+(7,3,'May 4,2021'),
+(3,4,'Feb 24,2021'),
+(1,2,'Dec 21,2019'),
+(1,1,'Aug 10,2020'),
+(1,2,'Apr 7,2021'),
+(4,3,'Sep 29,2019'),
+(2,4,'Oct 3,2020'),
+(2,4,'Nov 4,2020'),
+(8,2,'Jan 24,2019'),
+(8,2,'May 15,2019'),
+(8,2,'Feb 27,2020'),
+(8,2,'Aug 3,2020'),
+(10,3,'May 24,2020'),
+(10,1,'Jan 11,2021');
+SELECT * FROM visits;
+COMMIT WORK;
