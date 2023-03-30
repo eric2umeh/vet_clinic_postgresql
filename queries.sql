@@ -72,3 +72,13 @@ SELECT AVG(weight_kg) FROM animals;
 SELECT neutered,SUM(escape_attempts) AS escapees FROM animals GROUP BY neutered;
 SELECT species,MIN(weight_kg) AS minimum_weight,MAX(weight_kg) AS maximum_weight FROM animals GROUP BY species;
 SELECT species,AVG(escape_attempts) AS avg_escapees FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'  GROUP BY species;
+
+/* Milestone 3 */
+
+-- Using queries (using JOIN) to answer the following questions
+SELECT 
+    full_name AS owner, 
+    name AS animal  
+FROM 
+    animals A 
+JOIN owners O ON A.owner_id=O.id WHERE O.full_name='Melody Pond';
