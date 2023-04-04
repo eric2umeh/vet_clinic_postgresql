@@ -28,6 +28,13 @@
 > A veterinary clinic database is a relational database designed to manage and store information related to the operation of a veterinary clinic. 
 User can use the project query to create, read, update and delete specific data fromm the database using sql terminal, enabling efficient management and analysis of clinic data.
 
+### Entity Relational Diagram
+
+<div align="center">
+  <img src="diagram2.png" alt="Entity Relational Diagram" />
+  <br/>
+</div>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
